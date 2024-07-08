@@ -1,7 +1,10 @@
+import lombok.Data;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
+@Data
 public class Banco {
 
     private String nome;
@@ -9,18 +12,6 @@ public class Banco {
 
     public Banco() {
         this.contas = new ArrayList<>();
-    }
-
-    public String getNome() {
-        return nome;
-    }
-
-    public void setNome(String nome) {
-        this.nome = nome;
-    }
-
-    public List<Conta> getContas() {
-        return contas;
     }
 
     //métodos para gerenciar contas, como adicionar, remover, buscar contas, buscar por cliente e listar todas contas
